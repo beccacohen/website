@@ -3,3 +3,76 @@
 Universal Styling
 
 ============================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.container {
+  color: #234058
+
+}
+
+h1, h2 {
+  font-family: 'Raleway', sans-serif;
+  padding: 5px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+p {
+  font-family: 'Oswald', sans-serif;
+  padding-left: 50px;
+  text-transform: lowercase;
+  letter-spacing: 5px;
+  margin: 50px;
+  text-align: center;
+}
+
+/*============================
+
+Nav Styling
+
+============================*/
+
+header {
+    height: 72px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 990;
+    text-align: center;
+}
+
+header .nav-logo {
+    float: left;
+}
+
+.navbar li {
+  font-family: 'Raleway', sans-serif;
+  display: inline-block;
+}
+
+.navbar {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin: 0;
+  text-align: center;
+  vertical-align: center;
+}
+
+.nav-logo {
+  padding: 5px 15px;
+  width: 75px;
+}
+
+#navcenter {
+  text-align: center;
+  font-size: 25px;
+  margin: revert;
+  color: #234058;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
