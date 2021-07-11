@@ -121,3 +121,21 @@ textarea {
   padding: 6px 10px;
   border-radius: 4px;
 }
+
+/*========================================
+
+
+  Footer Styling
+
+
+===========================================*/
+
+footer p {
+  font-family: 'Raleway', sans-serif;
+  color: #234058;
+  padding: 0px 45px;
+}
+
+footer img {
+  margin: -25px 20px;
+  float: right;
