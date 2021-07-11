@@ -41,6 +41,39 @@
           <h2>Featured</h2>
 
         </section>
+
+        <section>
+          <form class="contact-form" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
+            <h2>Get intouch</h2>
+            <h3>Email Me</h3>
+
+            <div class="first-name spacing">
+              <label for="name" class="label_input_wrap">Name</label>
+              <input type="text" name="req_firstname" id="firstname" placeholder="John Smith" />
+            </div>
+
+
+            <div class="email spacing">
+              <label for="email" class="label_input_wrap">Email</label>
+              <input type="email" name="req_email" id="email" placeholder="JSmith@example.com" />
+            </div>
+
+            <div class="telephone spacing">
+              <label for="telephone" class="label_input_wrap">Telephone</label>
+              <input type="tel" name="telephone" id="telephone" placeholder="(123)123-1234" />
+            </div>
+
+            <div class="comments spacing">
+              <label for="comments" class="label_input_wrap">Comments</label>
+              <textarea name="comments" id="comments" placeholder="Type your message here" rows="6" cols="40"></textarea>
+            </div>
+
+            <div class="submit spacing">
+              <input type="submit" value="Send" />
+            </div>
+
+          </form>
+        </section>
       </div> <!-- container -->
     </main>
 
