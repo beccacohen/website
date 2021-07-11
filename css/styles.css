@@ -23,9 +23,9 @@ h1, h2 {
 
 p {
   font-family: 'Oswald', sans-serif;
-  padding-left: 50px;
-  text-transform: lowercase;
-  letter-spacing: 5px;
+  padding-left: 30px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
   margin: 50px;
   text-align: center;
 }
