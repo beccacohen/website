@@ -14,6 +14,8 @@ Universal Styling
 
 .container {
   color: #234058;
+  min-width: 600px;
+
 }
 
 h1, h2 {
@@ -43,16 +45,16 @@ Nav Styling
 ============================*/
 
 header {
-    height: 72px;
-    width: 100%;
-    left: 0;
-    top: 0;
-    z-index: 990;
-    text-align: center;
+  height: 72px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 990;
+  text-align: center;
 }
 
 header .nav-logo {
-    float: left;
+  float: left;
 }
 
 .navbar li {
@@ -82,9 +84,80 @@ header .nav-logo {
   font-weight: bold;
   text-decoration: none;
   word-spacing: 25px;
+  padding: 0px 100px;
 }
 
+/*========================================
 
+
+  Welcome Styling
+
+
+===========================================*/
+
+.welcome {
+  background: #beb9b3;
+  padding: 5px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.welcome p {
+  text-align: start;
+  font-size: 20px;
+  width: 65%;
+  padding: 0px 225px;
+  margin: 25px;
+}
+
+/*========================================
+
+
+  featured Styling
+
+
+===========================================*/
+
+.featured {
+  background: #f9bba5;
+  padding: 5px;
+}
+/*========================================
+
+
+  Education Styling
+
+
+===========================================*/
+
+.education {
+  background: #86a3a9;
+  padding: 5px;
+  text-align: center;
+}
+
+.education p {
+width: 350px;
+text-align: left;
+margin: 20px 10px;
+}
+
+.woods {
+  padding: 5px 100px;
+}
+
+.twentytwo {
+
+}
+
+.pright {
+  text-align: right;
+  width: 350px;
+  margin: 20px 10px;
+
+}
 /*========================================
 
 
@@ -98,6 +171,14 @@ header .nav-logo {
   background: #beb9b3;
   padding: 5px;
 }
+
+h3 {
+  font-size: 35px;
+  margin: 20px 50px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
 
 /*========================================
 
