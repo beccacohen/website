@@ -8,6 +8,8 @@ Universal Styling
   margin: 0;
   padding: 0;
   border: 0;
+  text-decoration: none;
+  color: #234058;
 }
 
 .container {
@@ -28,6 +30,10 @@ p {
   letter-spacing: 1px;
   margin: 50px;
   text-align: center;
+}
+
+li {
+
 }
 
 /*============================
@@ -74,8 +80,95 @@ header .nav-logo {
   color: #234058;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
+  text-decoration: none;
+  word-spacing: 25px;
 }
 
+
+/*========================================
+
+
+  Work Styling
+
+
+===========================================*/
+
+.work {
+  font-family: 'Oswald', sans-serif;
+  background: #beb9b3;
+  padding: 5px;
+}
+
+/*========================================
+
+
+  Portfolio Styling
+
+
+===========================================*/
+.portfolio {
+  background: #f9bba5;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3,150px);
+  grid-gap:50px 30px;
+  grid-template-rows: repeat(3,150px);
+  display: grid;
+  grid-gap: 15px;
+  margin: 0px 100px;
+  padding: 10px 25px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  object-fit: cover;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.item2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.item3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.item4 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+.item5 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+.item6 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
 /*========================================
 
 
@@ -86,7 +179,6 @@ header .nav-logo {
 .contact-form {
   background: #86a3a9;
   padding: 20px;
-  border-radius: 4px;
   color: #234058;
   font-family: 'Raleway', sans-serif;
 }
