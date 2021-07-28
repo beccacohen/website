@@ -182,7 +182,7 @@ text-transform: none;
 .work {
   font-family: 'Oswald', sans-serif;
   background: #beb9b3;
-  padding: 5px;
+  padding: 5px 0px 15px 0px;
 }
 
 h3 {
@@ -192,7 +192,34 @@ h3 {
   text-align: center;
 }
 
+.work h2, .portfolio h2 {
+font-size: 30px;
+padding: 10px 0px 0px 0px;
+}
 
+.underline {
+  border-bottom: 3px solid #234058;
+  width: 500px;
+  padding-bottom: 0px;
+  margin: 0px 394px;
+}
+
+.work h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.work p{
+  margin: 0px;
+  font-weight: 100;
+}
+
+.work li {
+  padding: 0.2% 33%;
+  font-size: 15px;
+  min-width: 437px;
+}
 /*========================================
 
 
@@ -202,7 +229,9 @@ h3 {
 ===========================================*/
 .portfolio {
   background: #f9bba5;
+  padding: 5px 0px;
 }
+
 
 .row {
   display: grid;
