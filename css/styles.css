@@ -15,6 +15,7 @@ Universal Styling
 .container {
   color: #234058;
   overflow-x: hidden;
+  max-width: 1280px;
 
 }
 
@@ -76,7 +77,6 @@ header .nav-logo {
 
 .nav-logo {
   padding: 5px 15px;
-  width: 75px;
 }
 
 #navcenter {
@@ -139,7 +139,7 @@ h1 {
 
 .education {
   background: #86a3a9;
-  padding: 5px 0px 50px;
+  padding: 5px 0px 80px;
   text-align: center;
 }
 
@@ -167,7 +167,7 @@ text-transform: none;
 .pright {
   text-align: left;
   width: 452px;
-  margin: 0% 0% 5% 35%;
+  margin: 0% 0% 5% 20%;
   font-family: 'Oswald', sans-serif;
   letter-spacing: 1px;
 }
@@ -182,7 +182,8 @@ text-transform: none;
 .work {
   font-family: 'Oswald', sans-serif;
   background: #beb9b3;
-  padding: 5px 0px 15px 0px;
+  padding: 5px 0px 5px 0px;
+  text-align: center;
 }
 
 h3 {
@@ -201,7 +202,7 @@ padding: 10px 0px 0px 0px;
   border-bottom: 3px solid #234058;
   width: 500px;
   padding-bottom: 0px;
-  margin: 0px 394px;
+  margin: 0px auto;
 }
 
 .work h3 {
@@ -216,9 +217,30 @@ padding: 10px 0px 0px 0px;
 }
 
 .work li {
-  padding: 0.2% 33%;
+  padding: 3px;
   font-size: 15px;
   min-width: 437px;
+  text-align: center;
+}
+
+.button {
+  line-height: 40px;
+  padding: 5px 20px;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #234058;
+  box-shadow: inset 0px -4px 3px #2f5574;
+  margin: 5px auto;
+}
+
+.button:hover {
+    background-color: #2f5574;
+}
+
+.button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 /*========================================
 
@@ -230,14 +252,18 @@ padding: 10px 0px 0px 0px;
 .portfolio {
   background: #f9bba5;
   padding: 5px 0px;
+  text-align: center;
 }
 
+.example-image-link {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px 10px;
+}
 
+/*==============================
 .row {
-  display: grid;
   grid-template-columns: repeat(3,150px);
-  grid-gap:50px 30px;
-  grid-template-rows: repeat(3,150px);
   display: grid;
   grid-gap: 15px;
   margin: 0px 100px;
@@ -292,6 +318,7 @@ padding: 10px 0px 0px 0px;
     grid-row-start: 3;
     grid-row-end: 6;
 }
+=================================*/
 /*========================================
 
 
