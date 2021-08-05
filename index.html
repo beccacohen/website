@@ -16,9 +16,8 @@
     <header>
       <div class="navbar">
         <div class="nav-logo">
-          <a><img src="images/logo.png" alt="Logo" width="60px"></a>
+          <img src="images/logo.png" alt="Logo" width="60px">
         </div>
-
         <nav>
           <ul id="navcenter">
             <li><a href="index.html">Home</a></li>
@@ -43,6 +42,43 @@
         <section>
           <div class="featured">
             <h2>Featured</h2>
+            <div class="slideshow-container">
+              <div class="mySlides1">
+                <img src="images/explorer.png" style="width:50%">
+              </div>
+
+              <div class="mySlides1">
+                <img src="images/logo.png" style="width:50%">
+              </div>
+
+              <div class="mySlides1">
+                <img src="images/pandora.jpg" style="width:50%">
+              </div>
+              <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+
+              <script>
+                var slideIndex = [1,1];
+                var slideId = ["mySlides1"]
+                showSlides(1, 0);
+                showSlides(1, 1);
+
+                function plusSlides(n, no) {
+                  showSlides(slideIndex[no] += n, no);
+                  }
+
+                function showSlides(n, no) {
+                  var i;
+                  var x = document.getElementsByClassName(slideId[no]);
+                  if (n > x.length) {slideIndex[no] = 1}
+                  if (n < 1) {slideIndex[no] = x.length}
+                  for (i = 0; i < x.length; i++) {
+                     x[i].style.display = "none";
+                   }
+                  x[slideIndex[no]-1].style.display = "block";
+                    }
+              </script>
+            </div>
           </div>
         </section>
 
@@ -117,7 +153,7 @@
             </div>
 
             <div>
-              <a class="example-image-link" href="https://rcohen306.wixsite.com/thedisneyexplorer"><img src="images/explorer.png" alt="Explorer" width="250px"/></a>
+              <a class="example-image-link" href="https://rcohen306.wixsite.com/thedisneyexplorer" target="_blank"><img src="images/explorer.png" alt="Explorer" width="250px"/></a>
 
               <a class="example-image-link" href="documents/finalpresentation.pdf.zip"><img src="images/castle2.jpg" alt="Castle" width="350px"/></a>
 
@@ -136,35 +172,36 @@
         </section>
 
         <section>
-          <form class="contact-form" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
-            <h2>Get intouch</h2>
-            <h3>Email Me</h3>
+          <div class="contact">
+            <form class="contact-form" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
+              <h2>Get intouch</h2>
+              <h3>Email Me</h3>
 
-            <div class="first-name spacing">
-              <label for="name" class="label_input_wrap">Name</label>
-              <input type="text" name="req_firstname" id="firstname" placeholder="John Smith" />
+              <div class="first-name spacing">
+                <label for="name" class="label_input_wrap">Name</label>
+                <input type="text" name="req_firstname" id="firstname" placeholder="John Smith" />
+              </div>
+
+
+              <div class="email spacing">
+                <label for="email" class="label_input_wrap">Email</label>
+                <input type="email" name="req_email" id="email" placeholder="JSmith@example.com" />
+              </div>
+
+              <div class="telephone spacing">
+                <label for="telephone" class="label_input_wrap">Telephone</label>
+                <input type="tel" name="telephone" id="telephone" placeholder="(123)123-1234" />
+              </div>
+
+              <div class="comments spacing">
+                <label for="comments" class="label_input_wrap">Comments</label>
+                <textarea name="comments" id="comments" placeholder="Type your message here" rows="6" cols="40"></textarea>
+              </div>
+
+              <div class="submit spacing">
+                <input type="submit" value="Send"/>
+              </div>
             </div>
-
-
-            <div class="email spacing">
-              <label for="email" class="label_input_wrap">Email</label>
-              <input type="email" name="req_email" id="email" placeholder="JSmith@example.com" />
-            </div>
-
-            <div class="telephone spacing">
-              <label for="telephone" class="label_input_wrap">Telephone</label>
-              <input type="tel" name="telephone" id="telephone" placeholder="(123)123-1234" />
-            </div>
-
-            <div class="comments spacing">
-              <label for="comments" class="label_input_wrap">Comments</label>
-              <textarea name="comments" id="comments" placeholder="Type your message here" rows="6" cols="40"></textarea>
-            </div>
-
-            <div class="submit spacing">
-              <input type="submit" value="Send"/>
-            </div>
-
           </form>
         </section>
       </div> <!-- container -->

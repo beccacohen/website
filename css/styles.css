@@ -32,15 +32,18 @@ h1, h2 {
 
 p {
   font-family: 'Oswald', sans-serif;
-  padding-left: 30px;
   text-transform: capitalize;
   letter-spacing: 1px;
-  margin: 50px;
   text-align: center;
 }
 
 li {
 
+}
+
+h3 {
+  font-size: 35px;
+  font-family: 'Raleway', sans-serif;
 }
 
 /*============================
@@ -50,12 +53,7 @@ Nav Styling
 ============================*/
 
 header {
-  height: 72px;
-  width: 100%;
-  left: 0;
-  top: 0;
-  z-index: 990;
-  text-align: center;
+  height: 52px;
 }
 
 header .nav-logo {
@@ -67,28 +65,16 @@ header .nav-logo {
   display: inline-block;
 }
 
-.navbar {
-  padding-bottom: 5px;
-  padding-top: 5px;
-  margin: 0;
-  text-align: center;
-  vertical-align: center;
-}
-
-.nav-logo {
-  padding: 5px 15px;
-}
-
 #navcenter {
-  text-align: center;
+
   font-size: 25px;
-  margin: revert;
   color: #234058;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
-  text-decoration: none;
   word-spacing: 25px;
-  padding: 0px 100px;
+  padding-top: 20px;
+  text-align: center;
+  padding-right: 155px;
 }
 
 /*========================================
@@ -117,7 +103,7 @@ h1 {
   text-transform: none;
 }
 
-/*========================================
+/*==========================================
 
 
   featured Styling
@@ -129,17 +115,53 @@ h1 {
   background: #f9bba5;
   padding: 5px;
 }
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
 /*========================================
 
 
   Education Styling
 
-
 ===========================================*/
+
 
 .education {
   background: #86a3a9;
-  padding: 5px 0px 80px;
+  padding: 5px 0px 110px;
   text-align: center;
 }
 
@@ -151,25 +173,17 @@ padding-left: 20px;
 text-transform: none;
 }
 
-.education h3 {
-  margin: 15px 500px 10px 0px;
-  padding-left: 20px;
-}
-
 .woods {
-  padding: 1% 90%;
+  padding: 1% 10% 0% 0%;
 }
 
 .twentytwo {
-  padding: 2% 0% 4% 10%;
+  padding: 0% 0% 5% 10%;
 }
 
 .pright {
-  text-align: left;
-  width: 452px;
-  margin: 0% 0% 5% 20%;
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 1px;
+  width: 800px;
+  margin: 0 auto;
 }
 /*========================================
 
@@ -183,13 +197,6 @@ text-transform: none;
   font-family: 'Oswald', sans-serif;
   background: #beb9b3;
   padding: 5px 0px 5px 0px;
-  text-align: center;
-}
-
-h3 {
-  font-size: 35px;
-  margin: 20px 50px;
-  font-family: 'Raleway', sans-serif;
   text-align: center;
 }
 
@@ -236,11 +243,11 @@ padding: 10px 0px 0px 0px;
 }
 
 .button:hover {
-    background-color: #2f5574;
+  background-color: #2f5574;
 }
 
 .button:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 /*========================================
 
@@ -261,64 +268,7 @@ padding: 10px 0px 0px 0px;
   margin: 5px 10px;
 }
 
-/*==============================
-.row {
-  grid-template-columns: repeat(3,150px);
-  display: grid;
-  grid-gap: 15px;
-  margin: 0px 100px;
-  padding: 10px 25px;
-}
 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-  object-fit: cover;
-}
-
-.item1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.item2 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.item3 {
-    grid-column-start: 5;
-    grid-column-end: 9;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.item4 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 6;
-}
-
-.item5 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 6;
-}
-
-.item6 {
-    grid-column-start: 5;
-    grid-column-end: 9;
-    grid-row-start: 3;
-    grid-row-end: 6;
-}
-=================================*/
 /*========================================
 
 
@@ -364,6 +314,9 @@ textarea {
   border-radius: 4px;
 }
 
+.contact {
+
+}
 /*========================================
 
 
@@ -371,13 +324,15 @@ textarea {
 
 
 ===========================================*/
+footer{
+  padding-top: 15px;
+}
 
 footer p {
   font-family: 'Raleway', sans-serif;
-  color: #234058;
-  padding: 0px 45px;
 }
 
 footer img {
   margin: -25px 20px;
   float: right;
+}
